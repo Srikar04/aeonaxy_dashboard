@@ -2,6 +2,8 @@
 
 import React from 'react'
 import docsImage from './docs.jpg';
+import Image from 'next/image';
+
 
 
 const Content = () => {
@@ -26,7 +28,7 @@ const Content = () => {
             <div>
                 <div className="text-xl font-bold">Collaborate with your team with these three features</div>
                 <div className="text-lg p-2 font-medium">✍️ Docs</div>
-                <img src={docsImage.src} alt="docs" height="300" width="300" /></div>
+                <Image src={docsImage.src} alt="docs" height="300" width="300" /></div>
                 <input type="text" placeholder="💡 Give it a go by typing / below" className=" my-2 p-2 bg-gray-200 rounded w-full" />
         </div>
     )

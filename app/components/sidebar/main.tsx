@@ -5,7 +5,7 @@ import { faBell} from '@fortawesome/free-regular-svg-icons'
 import Top from './top';
 import Bottom from './bottom';
 
-const sidebar = () => {
+const Sidebar = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     const toggleSidebar = () => {
@@ -43,4 +43,4 @@ const sidebar = () => {
     );
 }
 
-export default sidebar
+export default Sidebar
