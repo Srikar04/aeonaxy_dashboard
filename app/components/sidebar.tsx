@@ -23,7 +23,7 @@ const sidebar = () => {
             <aside id="logo-sidebar"
                 className={`relative top-0 left-0 w-70 h-screen transition-transform -translate-x-full sm:translate-x-0`}
                 aria-label="Sidebar">
-                <div className="h-full px-3 py-4 sm:w-70 overflow-y-auto bg-gray-50 dark:bg-gray-800 text-xs">
+                <div className="h-full px-3 py-1 sm:w-70 overflow-y-auto bg-gray-50 dark:bg-gray-800 text-xs">
                     <a href="https://flowbite.com/" className="flex justify-between items-center ps-2.5 mb-1 py-1">
                         <div className="flex items-center">
                             <img src="https://flowbite.com/docs/images/logo.svg" className="h-6 me-3 sm:h-7" alt="Flowbite Logo" />
@@ -31,11 +31,11 @@ const sidebar = () => {
                         </div>
                         <FontAwesomeIcon icon={faBell} />
                     </a>
-                    <div className="flex flex-col justify-between h-full">
+                    <div className="flex flex-col justify-between h-f">
                         <div>
                             <ul>
                                 <li>
-                                    <div className="flex items-center p-2 rounded-lg relative py-1 mb-1">
+                                    <div className="flex items-center p-2 rounded-lg relative py-1 mb-0.5">
                                         <div className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5">
                                             <FontAwesomeIcon icon={faHand} />
                                         </div>
@@ -48,59 +48,59 @@ const sidebar = () => {
                                     </div>
                                 </li>
                                 <li>
-                                    <div className="bg-gray-200 p-4 rounded-md w-full mb-2 py-1 text-xs">
+                                    <div className="bg-gray-200 p-4 rounded-md w-full mb-1 py-1 text-xs">
                                         <p className="font-bold mt-2">Your team used 8/50 free docs</p>
                                         <p className="font-extralight ">Upgrade to create Unlimited docs</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <div className="flex items-center p-2 rounded-lg py-1 mb-0.5">
+                                    <div className="flex items-center p-2 rounded-lg py-1 mb-0.25">
                                         <FontAwesomeIcon icon={faClock} className="mr-2" />
                                         <p>Catch Up</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <div className="flex items-center p-2 rounded-lg mb-1.5 py-1 ">
+                                    <div className="flex items-center px-2 rounded-lg mb-1 py-1 ">
                                         <FontAwesomeIcon icon={faMessage} className="mr-2" />
                                         <p>Discussion</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <div className="flex items-center p-2 py-1 mb-0.5">
+                                    <div className="flex items-center px-2 py-1 mb-0.25">
                                         <p className="text-xs font-bold">Favourites</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <div className="flex items-center p-2 rounded-lg ml-1">
+                                    <div className="flex items-center px-2 rounded-lg ml-1">
                                         <p>👋 Getting started</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <div className="flex items-center p-2 py-1 mb-0.5">
+                                    <div className="flex items-center px-2 py-2.5 mb-0.25">
                                         <p className="text-xs font-bold">My Channels</p>
                                     </div>
                                     <ul className="ml-4">
                                         <li>
-                                            <div className="flex items-center p-2 rounded-lg">
+                                            <div className="flex items-center px-2 mb-1.5 rounded-lg">
                                                 <FontAwesomeIcon icon={faCaretRight} className="mr-2" />
                                                 <p>My private channel</p>
                                             </div>
                                             <ul className="ml-4 bg-gray-300">
                                                 <li>
-                                                    <div className="flex items-center p-2 rounded-lg">
+                                                    <div className="flex items-center p-2 mb-1.5 rounded-xl">
                                                         <p>👋 Getting started</p>
                                                     </div>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <div className="flex items-center p-2 rounded-lg">
+                                            <div className="flex items-center px-2 mb-1.5 rounded-lg">
                                                 <FontAwesomeIcon icon={faCaretRight} className="mr-2" />
                                                 <p>Engineering</p>
                                             </div>
                                         </li>
                                         <li>
-                                            <div className="flex items-center p-2 rounded-lg">
+                                            <div className="flex items-center px-2 mb-1.5 rounded-lg">
                                                 <FontAwesomeIcon icon={faCaretRight} className="mr-2" />
                                                 <p>Product</p>
                                             </div>
@@ -109,35 +109,33 @@ const sidebar = () => {
                                 </li>
                             </ul>
                         </div>
-                        <div>
-                            <div className="flex flex-col justify-end">
-                                <ul className='text-xs space-y-0.5'>
-                                    <li>
-                                        <div className="flex items-center p-2 rounded-lg">
-                                            <FontAwesomeIcon icon={faUserPlus} className="mr-2" />
-                                            <p>Add people</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="flex items-center p-2 rounded-lg">
-                                            <FontAwesomeIcon icon={faCircleHalfStroke} className="mr-2" />
-                                            <p>Templates</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="flex items-center p-2 rounded-lg">
-                                            <FontAwesomeIcon icon={faShareNodes} className="mr-2" />
-                                            <p>Shared with me</p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="flex items-center p-2 rounded-lg">
-                                            <FontAwesomeIcon icon={faBoxArchive} className="mr-2" />
-                                            <p>Archive</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div className="flex flex-col justify-end h-full">
+                            <ul className='text-xs flex-grow'>
+                                <li>
+                                    <div className="flex items-center mb-2.5 rounded-lg">
+                                        <FontAwesomeIcon icon={faUserPlus} className="mr-2" />
+                                        <p>Add people</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex items-center mb-2.5 rounded-lg">
+                                        <FontAwesomeIcon icon={faCircleHalfStroke} className="mr-2" />
+                                        <p>Templates</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex items-center mb-2.5 rounded-lg">
+                                        <FontAwesomeIcon icon={faShareNodes} className="mr-2" />
+                                        <p>Shared with me</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div className="flex items-center mb-2.5 rounded-lg">
+                                        <FontAwesomeIcon icon={faBoxArchive} className="mr-2" />
+                                        <p>Archive</p>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
